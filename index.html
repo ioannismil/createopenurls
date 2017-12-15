@@ -8,17 +8,24 @@
         
     </head>
     <body>
-        <script src="function.js"></script>
-        URL: <input type="text" id="txt" value=" http://site.com/">
-        Number of URLs: <input type="number" id="num" value="3">
-        Check if you also want numbers: <input type="checkbox" id="chk">
-        Extension: <input type="text" id="ext" value=".txt">
-        List separated with spaces: <input type="text" id="lst" value="List">
-<input type="button" id="btn" value="Submit" onclick="calculate()">
-        
-        <p id="hld"></p>
-        <p id="test"></p>
-    <input type="button" id="openall" value="Open URLS" onclick="openall()">
-
-    </body> 
+        <div id="heading">
+        <h2 id="hdn">Create and mass open URLs</h2>
+        </div>
+        <div id="container">
+            <script src="function.js"></script>
+            <ul>
+                <li id="prp">This tool allows you to create and open URLs. The tool opens the URLs in a new tab in your browser. </li>
+                <li id="prp">URL: <input type="text" id="txt" value=" http://site.com/"> Number of URLs(Starts from 0): <input type="number" id="num" value="3"></li>
+                <li id="prp">Check if you want numbers: <input type="checkbox" id="chk" checked>
+                Extension: <input type="text" id="ext" value=".txt"></li>
+                <li id="prp">List separated with spaces(If you want to   open a list of URLs insert the list here) Add the number of URLs above. e.g http://yoursite.com):</li>
+                <li id="prp"><textarea rows="2" cols="55" id="lst" value="List"></textarea></li>
+            </ul>
+            <div id="btn">
+                <button id="btn" onclick="calculate()">Submit</button>
+                <button id="openall" onclick="openall()">Open URLs</button>
+            </div>
+        </div>
+        <div id="con"><p id="hld"></p></div>
+</body> 
 </html>
